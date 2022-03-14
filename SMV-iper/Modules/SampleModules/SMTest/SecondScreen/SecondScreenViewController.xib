@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondScreenViewController" customModule="SMV_iper" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonChooseUser" destination="EJP-4N-kmT" id="9AB-P3-HUJ"/>
+                <outlet property="labelName" destination="7Y2-oP-c9f" id="1QL-P1-WtO"/>
+                <outlet property="labelSelectedUser" destination="sJu-WV-n78" id="K4g-ht-3Sy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aH1-0W-FNq">
+                    <rect key="frame" x="20" y="57" width="374" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Y2-oP-c9f">
+                    <rect key="frame" x="20" y="73.5" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected User Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJu-WV-n78">
+                    <rect key="frame" x="20" y="433.5" width="374" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJP-4N-kmT">
+                    <rect key="frame" x="20" y="789" width="374" height="41"/>
+                    <color key="backgroundColor" name="BtnColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="VfM-Q1-lU4"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Choose a User"/>
+                    <connections>
+                        <action selector="chooseUserPressed:" destination="-1" eventType="touchUpInside" id="VU4-eS-kfC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="aH1-0W-FNq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="AnR-rh-30z"/>
+                <constraint firstItem="7Y2-oP-c9f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="EOm-JU-vvM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aH1-0W-FNq" secondAttribute="trailing" constant="20" id="GXy-eS-xU0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EJP-4N-kmT" secondAttribute="trailing" constant="20" id="GZ7-FP-asg"/>
+                <constraint firstItem="sJu-WV-n78" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Q5H-uk-wat"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7Y2-oP-c9f" secondAttribute="trailing" constant="20" id="Y9C-P1-j0p"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sJu-WV-n78" secondAttribute="trailing" constant="20" id="Yia-Iz-1MF"/>
+                <constraint firstItem="EJP-4N-kmT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ZVF-Qx-GUN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EJP-4N-kmT" secondAttribute="bottom" constant="32" id="cZU-wh-jeu"/>
+                <constraint firstItem="sJu-WV-n78" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gVw-XP-cfM"/>
+                <constraint firstItem="7Y2-oP-c9f" firstAttribute="top" secondItem="aH1-0W-FNq" secondAttribute="bottom" constant="2" id="iUJ-8d-XYK"/>
+                <constraint firstItem="aH1-0W-FNq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="13" id="w85-rD-oKm"/>
+            </constraints>
+            <point key="canvasLocation" x="-674" y="135"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BtnColor">
+            <color red="0.16899999976158142" green="0.3880000114440918" blue="0.48199999332427979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
